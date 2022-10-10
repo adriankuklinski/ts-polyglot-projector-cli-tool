@@ -10,6 +10,7 @@ export default function getOpts(): Opts {
     return cli([{
         name: "args",
         defaultOption: true,
+        multiple: true,
         type: String,
     }, {
         name: "config",
