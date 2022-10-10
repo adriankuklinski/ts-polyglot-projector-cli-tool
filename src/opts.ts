@@ -9,7 +9,7 @@ export type Opts = {
 export default function getOpts(): Opts {
     return cli([{
         name: "args",
-        defaultValue: true,
+        defaultOption: true,
         type: String,
     }, {
         name: "config",
