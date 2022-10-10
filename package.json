@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@types/command-line-args": "^5.2.0",
+    "command-line-args": "^5.2.1"
+  }
+}
