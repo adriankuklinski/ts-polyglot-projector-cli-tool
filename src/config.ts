@@ -1,5 +1,5 @@
-import path from "path";
-import process from "process";
+import * as path from "path";
+import * as process from "process";
 import { Opts } from "./opts";
 
 export enum Operation {
@@ -47,11 +47,11 @@ function getOperation(opts: Opts): Operation {
         return Operation.Print;
     }
 
-    if (opts[0] === "add") {
+    if (opts.args[0] === "add") {
         return Operation.Add;
     }
 
-    if (opts[0] === "rm") {
+    if (opts.args[0] === "rm") {
         return Operation.Remove;
     }
 
